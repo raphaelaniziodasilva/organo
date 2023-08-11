@@ -14,7 +14,7 @@ const Time = ({ time, colaboradores, aoDeletar }) => {
                 {colaboradores.map((colaborador, indice) => {
 
                     // console.log(<Colaborador key={indice} colaborador={colaborador} 
-                    // corDeFundo={time.corSecundaria} aoDeletar={() => {}}/>)
+                    // corDeFundo={time.corSecundaria} aoDeletar={aoDeletar}/>)
 
                     return <Colaborador key={indice}
                     colaborador={colaborador} 

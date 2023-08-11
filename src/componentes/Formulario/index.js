@@ -31,23 +31,27 @@ const Formulario = ({aoCadastrar, times}) => {
                     label='Nome'
                     placeholder='Digite seu nome '
                     valor={nome}
-                    aoAlterado={valor => setNome(valor)}/>
+                    aoAlterado={valor => setNome(valor)}
+                />
                 <CampoTexto
                     obrigatorio={true}
                     label='Cargo' 
                     placeholder='Digite seu cargo '
                     valor={cargo}
-                    aoAlterado={valor => setCargo(valor)}/>
+                    aoAlterado={valor => setCargo(valor)}
+                />
                 <CampoTexto 
                     label='Imagem' 
                     placeholder='Informe o endereço da imagem '
-                    aoAlterado={valor => setImagem(valor)}/>
+                    aoAlterado={valor => setImagem(valor)}
+                />
                 <ListaSuspensa 
                     obrigatorio={true}
                     label='Times'
                     items={times} 
                     valor={time}
-                    aoAlterado={valor => setTime(valor)}/>
+                    aoAlterado={valor => setTime(valor)}
+                />
                 <Botao texto='Criar card' />
             </form>
         </section>
